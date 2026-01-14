@@ -11,7 +11,7 @@ import 'package:lottie/lottie.dart';
 
 final googleMapsServiceProvider = Provider<GoogleMapsService>((ref) {
   // Replace with your actual Google Maps API key
-  const apiKey = 'AIzaSyAaqWjbul7rblbie3MSYw-5Kvv7L5ZKxYs';
+  const apiKey = '';
   return GoogleMapsService(apiKey);
 });
 
