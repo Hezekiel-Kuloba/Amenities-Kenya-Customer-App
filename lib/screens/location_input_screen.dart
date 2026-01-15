@@ -8,10 +8,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:lottie/lottie.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 final googleMapsServiceProvider = Provider<GoogleMapsService>((ref) {
   // Replace with your actual Google Maps API key
-  const apiKey = '';
+  final apiKey = dotenv.env['LOCATION_INPUT_API_KEY'] ?? '';
   return GoogleMapsService(apiKey);
 });
 
